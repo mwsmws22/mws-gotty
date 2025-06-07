@@ -12,5 +12,5 @@ RUN apk update && \
     apk add lnav
 WORKDIR /root
 COPY --from=0 /gotty/gotty /usr/bin/
-CMD ["gotty", "-w", "-p", "6383", "lnav", "/docker/*-logs/*.log"]
+CMD ["gotty", "-w", "-p", "6383", "lnav", "/docker/logs/*.log"]
 EXPOSE 6383
